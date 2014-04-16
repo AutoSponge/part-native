@@ -37,7 +37,7 @@ module.exports = function ( name, obj ) {
             try {
                 return method !== 'constructor' &&
                     method !== 'prototype' &&
-                    typeof obj[method] === 'function';
+                    typeof o[method] === 'function';
             } catch ( e ) {
                 return false;
             }
