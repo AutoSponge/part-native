@@ -1,0 +1,53 @@
+{
+  "name": "part-native",
+  "description": "generate helpful methods from native objects using _part_",
+  "keywords": [
+    "functional",
+    "curry",
+    "partial application"
+  ],
+  "homepage": "https://github.com/AutoSponge/part-native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AutoSponge/part-native"
+  },
+  "bugs": {
+    "url": "https://github.com/AutoSponge/part-native/issues",
+    "email": "pgrenier@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Paul Grenier",
+    "email": "pgrenier@gmail.com",
+    "url": "http://autosponge.github.io/"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "version": "0.1.0",
+  "dependencies": {
+    "part": "^0.1.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.0",
+    "jshint-stylish": "^0.1.5",
+    "tape": "^2.12.3"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/4..latest",
+      "firefox/3..latest",
+      "safari/4..latest",
+      "opera/10.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/4.2..latest"
+    ]
+  },
+  "scripts": {
+    "test": "tape test/*.js",
+    "jshint": "jshint --reporter=node_modules/jshint-stylish/stylish.js *.js"
+  }
+}
