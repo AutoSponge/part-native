@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/AutoSponge/part-native.png?branch=master)](https://travis-ci.org/AutoSponge/part-native)
+[![NPM version](https://badge.fury.io/js/part-native.svg)](http://badge.fury.io/js/part-native)
+
 part-native
 ===========
 
