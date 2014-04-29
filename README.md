@@ -22,7 +22,7 @@ generate helpful methods from native objects using [\_part\_](https://github.com
 
 Installation:
 
-`npm install --save-dev part-native`
+`npm install --save part-native`
 
 Usage:
 
