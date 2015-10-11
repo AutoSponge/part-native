@@ -24,6 +24,18 @@ Installation:
 
 `npm install --save part-native`
 
+Or
+
+download and include the script `lib/part-native.min.js`
+
+Or
+
+include the script from a CDN:
+
+```html
+<script src="https://cdn.rawgit.com/AutoSponge/part-native/master/lib/part-native.min.js"></script>
+```
+
 Usage:
 
 Get a reference to a bound function on a native object.
@@ -32,13 +44,17 @@ Get a reference to a bound function on a native object.
 var log = require( 'part-native' )( 'console' ).log;
 [1,2,3].map( log );
 ```
+[try it](https://tonicdev.com/autosponge/part-native-console-log)
+
 or
 
 ```js
-var map_ = require( 'Array.map_' );
+var map_ = require( 'part-native' )( 'Array.map_' );
 var logAll = map_( log );
 logAll( [1,2,3] );
 ```
+
+[try it](https://tonicdev.com/autosponge/part-native-array-reduce)
 
 Get a reference to a collection of methods.
 
@@ -59,4 +75,15 @@ Klass.prototype.test = function ( msg ) {
 var partKlass = require( 'part-native' )( 'Klass', Klass );
 var klassMsg = partKlass.test_( 'hi from ' );
 klassMsg( new Klass( 1 ) );
+```
+
+[try it](https://tonicdev.com/autosponge/part-native-custom-method)
+
+If you're using `part-native` in the browser, use the global method `createPart`:
+
+```js
+var map_ = createPart( 'Array.map_' );
+var add1 = function (n) {return n + 1;}
+var incAll = map_( add1 );
+incAll( [1,2,3] ) // -> [2,3,4]
 ```

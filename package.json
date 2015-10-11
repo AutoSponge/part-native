@@ -21,6 +21,7 @@
     "email": "pgrenier@gmail.com",
     "url": "http://autosponge.github.io/"
   },
+  "main": "index.js",
   "engines": {
     "node": "*"
   },
@@ -29,9 +30,11 @@
     "part": "^0.1.1"
   },
   "devDependencies": {
+    "browserify": "^11.2.0",
     "jshint": "^2.5.0",
     "jshint-stylish": "^0.1.5",
-    "tape": "^2.12.3"
+    "tape": "^2.12.3",
+    "uglifyjs": "^2.4.10"
   },
   "testling": {
     "files": "test/*.js",
@@ -48,6 +51,9 @@
   },
   "scripts": {
     "test": "tape test/*.js",
+    "browser": "browserify -s createPart -e ./index.js -o lib/part-native.js",
+    "minify": "uglifyjs -m -c -o lib/part-native.min.js -- lib/part-native.js",
+    "build": "npm run browser && npm run minify",
     "jshint": "jshint --reporter=node_modules/jshint-stylish/stylish.js *.js"
   }
 }
