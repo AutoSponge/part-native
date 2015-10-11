@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "jshint": "^2.5.0",
-    "jshint-stylish": "^0.1.5",
-    "tape": "^2.12.3"
+    "jshint-stylish": "^2.0.1",
+    "tape": "^4.2.1"
   },
   "testling": {
     "files": "test/*.js",
