@@ -32,8 +32,8 @@
   "devDependencies": {
     "browserify": "^11.2.0",
     "jshint": "^2.5.0",
-    "jshint-stylish": "^0.1.5",
-    "tape": "^2.12.3",
+    "jshint-stylish": "^2.0.1",
+    "tape": "^4.2.1",
     "uglifyjs": "^2.4.10"
   },
   "testling": {
