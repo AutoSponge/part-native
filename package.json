@@ -30,7 +30,7 @@
     "part": "^0.1.1"
   },
   "devDependencies": {
-    "browserify": "^11.2.0",
+    "browserify": "^13.0.0",
     "jshint": "^2.5.0",
     "jshint-stylish": "^2.0.1",
     "tape": "^4.2.1",
