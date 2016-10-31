@@ -23,7 +23,7 @@
   },
   "main": "index.js",
   "engines": {
-    "node": "*"
+    "node": ">= 4"
   },
   "version": "0.1.2",
   "dependencies": {
